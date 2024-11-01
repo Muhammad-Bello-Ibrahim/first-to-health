@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Odds */
+:root {
+    --color-primary: rgb(152, 202, 69);
+    --color-secondary: rgb(34, 157, 216);
+}
+/* toggler */
+.nav .toggler {
+    display: none;
+}
+.nav .toggler > div {
+    background: var(--color-secondary);
+    width: 30px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 3px 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    color: ;
+    outline: none;
+}
+/* donate_btn */
+.donate_btn {
+    border: 1px solid var(--color-secondary);;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* main */
+#main {
+    max-width: 1100px;
+    margin-inline: auto;
+    /* background: green; */
+    
+
+}
+/* nav */
+
+#main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.nav .logo {
+    width: 250px;
+    object-fit: contain;
+}
+.nav ul li {
+    display: inline;
+    margin: 13px;
+    font-size: 20px;
+}
+.nav ul li a {
+    color: var(--color-primary);
+
+}
+/* menu */
+.menu {
+    
+}
+/* hero */
+#hero{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+#hero .hero_left { 
+    /* margin-top: -20px; */
+}
+#hero .hero_left h1 {
+    font-size: 3.2rem;
+    color: var(--color-primary);
+}
+#hero .hero_left h1:first-line {
+    /* font-size: 23px; */
+    color: var(--color-secondary);
+}
+#hero .hero_left p {
+    font-size: 23px;
+    color: var(--color-secondary);
+    margin-top: 25px;
+}
+.hero_left .downer {
+    margin: 50px 0 10px 0;
+}
+.downer a{
+    font-size: 20px;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 10px 30px;
+    background: var(--color-secondary);
+}
+.downer .styling {
+    display: flex;
+    margin: 100px 0 5px 0;
+}
+.downer .styling div:nth-child(1), 
+.downer .styling div:nth-child(3) {
+    opacity: .5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.downer .styling div {
+    background: var(--color-primary);
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+    border-radius: .3em;
+}
+
+#hero .hero_right .hero_img{
+    width: 600px;
+    border-radius: 3rem;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    /* Styles for small smartphones */
+    .nav .toggler {
+        display: block;
+        z-index: 10;
+    }
+    .nav {
+        padding: 0;
+        gap: 20px;
+        /* background: green; */
+    }
+    .menu {
+        font-size: 107px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        background: var(--color-primary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; 
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .menu ul li {
+        position: relative;
+        
+    }
+    .menu ul li a {
+        text-align: center;
+    }
+    .donate_btn {
+        width: 500px;
+        background: var(--color-primary);
+    }
+
+    .menu.open {
+        display: block; 
+
+    }
+    
+    .menu ul li a {
+        color: #fff !important;
+        font-size: 20px;
+        /* margin: 20px; */
+    }
+    #hero {
+        flex-direction: column;
+        background: url(./images/hero.\ African\ men_  ) no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background-origin: border-box; */
+        margin: 0;
+    }
+    #hero .hero_left {
+        margin-top: 100px;
+        max-width: 650px;
+
+    }
+    .hero_left h1{
+        margin: 0 20px;
+        font-size: 2.3em !important;
+    }
+    .hero_left p{
+        margin: 0 20px;
+        color: #000 !important;
+    }
+    .hero_left .downer {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .downer .styling {
+        display: flex;
+        justify-content: center;
+    }
+    #hero .hero_right{
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Styles for tablets and large phones */
+    .nav .toggler {
+        display: block;
+        z-index: 10;
+    }
+    .nav {
+        padding: 0;
+        gap: 20px;
+        /* background: green; */
+    }
+    .menu {
+        font-size: 107px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        background: var(--color-primary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; 
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .menu ul li {
+        position: relative;
+        
+    }
+    .menu ul li a {
+        text-align: center;
+    }
+    .donate_btn {
+        width: 500px;
+        background: var(--color-primary);
+    }
+
+    .menu.open {
+        display: block; 
+
+    }
+    
+    .menu ul li a {
+        color: #fff !important;
+        font-size: 20px;
+        /* margin: 20px; */
+    }
+    #hero {
+        flex-direction: column;
+        background: url(./images/hero.\ African\ men_  ) no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background-origin: border-box; */
+        margin: 0;
+    }
+    #hero .hero_left {
+        margin-top: 100px;
+        max-width: 650px;
+
+    }
+    .hero_left h1{
+        margin: 0 20px;
+        font-size: 2.3em !important;
+    }
+    .hero_left p{
+        margin: 0 20px;
+        color: #000 !important;
+    }
+    #hero .hero_right{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    /* Styles for landscape tablets and smaller laptops */
+    .nav .toggler {
+        display: block;
+        z-index: 10;
+    }
+    .nav {
+        padding: 0;
+        gap: 20px;
+        /* background: green; */
+    }
+    .menu {
+        font-size: 107px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+        background: var(--color-primary);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; 
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .menu ul li {
+        position: relative;
+        
+    }
+    .menu ul li a {
+        text-align: center;
+    }
+    .donate_btn {
+        width: 500px;
+        background: var(--color-primary);
+    }
+
+    .menu.open {
+        display: block; 
+
+    }
+    
+    .menu ul li a {
+        color: #fff !important;
+        font-size: 20px;
+        /* margin: 20px; */
+    }
+    #hero {
+        flex-direction: column;
+        background: url(./images/hero.\ African\ men_  ) no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background-origin: border-box; */
+        margin: 0;
+    }
+    #hero .hero_left {
+        margin-top: 100px;
+        max-width: 650px;
+
+    }
+    .hero_left h1{
+        margin: 0 20px;
+        font-size: 2.3em !important;
+    }
+    .hero_left p{
+        margin: 0 20px;
+        color: #000 !important;
+    }
+    #hero .hero_right{
+        display: none;
+    }
+}
